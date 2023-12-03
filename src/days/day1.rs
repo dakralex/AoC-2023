@@ -6,7 +6,7 @@ pub struct AocDay;
 impl AocSolution<1> for AocDay {
     type ResponseType = u32;
 
-    fn solve_first(&self, input: &str) -> Self::ResponseType {
+    fn solve_first(input: &str) -> Self::ResponseType {
         input
             .lines()
             .map(|line| {
@@ -20,7 +20,7 @@ impl AocSolution<1> for AocDay {
             .sum()
     }
 
-    fn solve_second(&self, input: &str) -> Self::ResponseType {
+    fn solve_second(input: &str) -> Self::ResponseType {
         const NUM_MATCHES: [&str; 19] = [
             "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", //
             "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
